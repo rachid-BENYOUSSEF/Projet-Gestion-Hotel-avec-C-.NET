@@ -1,0 +1,42 @@
+﻿@model IEnumerable<gestionhotel.Models.Chambre>
+
+@{
+    ViewData["Title"] = "Index";
+    var headerColor = "#4A57C6"; // Couleur pour les en-têtes
+    var buttonColor = "#7854B0"; // Couleur des boutons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Liste des Chambres</h1>
+
+<p>
+    <a asp-action="Create" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Ajouter une Nouvelle Chambre</a>
+</p>
+<table class="table table-bordered table-striped" style="width:100%; border-collapse:collapse; text-align:center;">
+    <thead style="background-color:@headerColor; color:white;">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Capacite)</th>
+            <th>@Html.DisplayNameFor(model => model.DescriptionChambre)</th>
+            <th>@Html.DisplayNameFor(model => model.StatutChambre)</th>
+            <th>@Html.DisplayNameFor(model => model.TarifParNuit)</th>
+            <th>@Html.DisplayNameFor(model => model.TypeChambre)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Capacite)</td>
+                <td>@Html.DisplayFor(modelItem => item.DescriptionChambre)</td>
+                <td>@Html.DisplayFor(modelItem => item.StatutChambre)</td>
+                <td>@Html.DisplayFor(modelItem => item.TarifParNuit)</td>
+                <td>@Html.DisplayFor(modelItem => item.TypeChambre)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ChambreId" class="btn btn-primary" style="margin-right:5px;">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.ChambreId" class="btn btn-info" style="margin-right:5px;">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.ChambreId" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

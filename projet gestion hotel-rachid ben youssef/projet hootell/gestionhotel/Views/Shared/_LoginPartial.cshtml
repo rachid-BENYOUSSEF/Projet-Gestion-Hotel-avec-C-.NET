@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav me-auto">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        @if (User.IsInRole("admin"))
+        {
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Fidelites" asp-action="Index">Fidelites</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Chambres" asp-action="Index">Chambres</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="salles" asp-action="Index">Salles</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Index">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Reservations</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Clients</a></li>
+        }
+        else
+        {
+            <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Reservation</a></li>
+        }
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" id="login" style="color: #F6F4F0;" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        </li>
+    }
+</ul>
+
+<ul class="navbar-nav ms-auto">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a id="manage" class="nav-link" style="color: #F6F4F0;" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+        </li>
+        <li class="nav-item">
+            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="logout" type="submit" class="nav-link btn btn-link border-0" style="color: #F6F4F0; background-color: transparent;">Logout</button>
+            </form>
+        </li>
+    }
+</ul>

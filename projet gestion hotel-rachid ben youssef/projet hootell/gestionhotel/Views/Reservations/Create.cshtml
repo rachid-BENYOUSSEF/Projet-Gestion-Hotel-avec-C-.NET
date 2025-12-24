@@ -1,0 +1,89 @@
+﻿@model gestionhotel.Models.Reservation
+
+@{
+    ViewData["Title"] = "Créer une Réservation";
+    var headerColor = "#4A57C6"; // Theme header color
+    var primaryButtonColor = "#4A57C6"; // Primary button color
+    var neutralButtonColor = "#6c757d"; // Neutral button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Créer une Réservation</h1>
+
+<div style="margin: 30px auto; max-width: 700px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4 style="color:@headerColor; text-align:center; margin-bottom:20px;">Détails de la Réservation</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ChambreId" class="form-label"></label>
+                    <select asp-for="ChambreId" class="form-select" asp-items="ViewBag.ChambreId"></select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="SalleId" class="form-label"></label>
+                    <select asp-for="SalleId" class="form-select" asp-items="ViewBag.SalleId"></select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ServiceId" class="form-label"></label>
+                    <input asp-for="ServiceId" class="form-control" />
+                    <span asp-validation-for="ServiceId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DateDebut" class="form-label"></label>
+                    <input asp-for="DateDebut" class="form-control" type="datetime-local" />
+                    <span asp-validation-for="DateDebut" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DateFin" class="form-label"></label>
+                    <input asp-for="DateFin" class="form-control" type="datetime-local" />
+                    <span asp-validation-for="DateFin" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="DateReservation" class="form-label"></label>
+                    <input asp-for="DateReservation" class="form-control" type="date" />
+                    <span asp-validation-for="DateReservation" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="StatutReservation" class="form-label"></label>
+                    <select asp-for="StatutReservation" class="form-select">
+                        <option value="Confirmée">Confirmée</option>
+                        <option value="Annulée">Annulée</option>
+                        <option value="En attente">En attente</option>
+                    </select>
+                    <span asp-validation-for="StatutReservation" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="TypeReservation" class="form-label"></label>
+                    <select asp-for="TypeReservation" class="form-select">
+                        <option value="Individuelle">Individuelle</option>
+                        <option value="Groupe">Groupe</option>
+                    </select>
+                    <span asp-validation-for="TypeReservation" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-center">
+                    <input type="submit" value="Créer" class="btn btn-primary" style="background-color:@primaryButtonColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div style="text-align:center; margin-top:20px;">
+    <a asp-action="Index" class="btn btn-secondary" style="background-color:@neutralButtonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Retour à la Liste</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

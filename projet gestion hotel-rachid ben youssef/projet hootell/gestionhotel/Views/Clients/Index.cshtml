@@ -1,0 +1,48 @@
+﻿@model IEnumerable<gestionhotel.Models.Client>
+
+@{
+    ViewData["Title"] = "Index";
+    var headerColor = "#4A57C6"; // Couleur pour les en-têtes
+    var buttonColor = "#7854B0"; // Couleur des boutons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Liste des Clients</h1>
+
+<p>
+    <a asp-action="Create" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Ajouter un Nouveau Client</a>
+</p>
+<table class="table table-bordered table-striped" style="width:100%; border-collapse:collapse; text-align:center;">
+    <thead style="background-color:@headerColor; color:white;">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Adresse)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.Historique)</th>
+            <th>@Html.DisplayNameFor(model => model.Nom)</th>
+            <th>@Html.DisplayNameFor(model => model.NumeroTelephone)</th>
+            <th>@Html.DisplayNameFor(model => model.Preference)</th>
+            <th>@Html.DisplayNameFor(model => model.Prenom)</th>
+            <th>@Html.DisplayNameFor(model => model.Fidelite)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Adresse)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Historique)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nom)</td>
+                <td>@Html.DisplayFor(modelItem => item.NumeroTelephone)</td>
+                <td>@Html.DisplayFor(modelItem => item.Preference)</td>
+                <td>@Html.DisplayFor(modelItem => item.Prenom)</td>
+                <td>@Html.DisplayFor(modelItem => item.Fidelite.FideliteId)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClientId" class="btn btn-primary" style="margin-right:5px;">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.ClientId" class="btn btn-info" style="margin-right:5px;">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.ClientId" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

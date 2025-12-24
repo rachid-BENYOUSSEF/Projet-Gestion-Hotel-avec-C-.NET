@@ -1,0 +1,69 @@
+﻿@model gestionhotel.Models.Client
+
+@{
+    ViewData["Title"] = "Create";
+    var headerColor = "#4A57C6"; // Color for headers
+    var buttonColor = "#7854B0"; // Color for buttons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Créer un Client</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Create" style="background-color:#f9f9f9; padding:20px; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Adresse" class="control-label" style="font-weight:bold;">Adresse</label>
+                <input asp-for="Adresse" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Adresse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label" style="font-weight:bold;">Email</label>
+                <input asp-for="Email" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FideliteId" class="control-label" style="font-weight:bold;">Programme de Fidélité</label>
+                <select asp-for="FideliteId" class="form-control" asp-items="ViewBag.FideliteId" style="border-radius:5px;"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Historique" class="control-label" style="font-weight:bold;">Historique</label>
+                <input asp-for="Historique" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Historique" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nom" class="control-label" style="font-weight:bold;">Nom</label>
+                <input asp-for="Nom" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroTelephone" class="control-label" style="font-weight:bold;">Numéro de Téléphone</label>
+                <input asp-for="NumeroTelephone" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="NumeroTelephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preference" class="control-label" style="font-weight:bold;">Préférence</label>
+                <input asp-for="Preference" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Preference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prenom" class="control-label" style="font-weight:bold;">Prénom</label>
+                <input asp-for="Prenom" class="form-control" style="border-radius:5px;" />
+                <span asp-validation-for="Prenom" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Créer" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center" style="margin-top:20px;">
+    <a asp-action="Index" style="text-decoration:none; color:@buttonColor; font-weight:bold;">Retour à la Liste</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

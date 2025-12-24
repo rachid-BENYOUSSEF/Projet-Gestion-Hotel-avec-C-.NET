@@ -1,0 +1,54 @@
+﻿@model gestionhotel.Models.Chambre
+
+@{
+    ViewData["Title"] = "Delete";
+    var headerColor = "#4A57C6"; // Color for headers
+    var buttonColor = "#7854B0"; // Color for buttons
+    var dangerColor = "#DC3545"; // Color for the delete button
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Supprimer une Chambre</h1>
+
+<h3 style="text-align:center; color:#555;">Êtes-vous sûr de vouloir supprimer cette chambre ?</h3>
+<div style="margin: 30px auto; max-width: 600px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4 style="color:@headerColor; text-align:center;">Chambre</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-4" style="font-weight:bold; color:#333;">
+            @Html.DisplayNameFor(model => model.Capacite)
+        </dt>
+        <dd class="col-sm-8" style="color:#555;">
+            @Html.DisplayFor(model => model.Capacite)
+        </dd>
+        <dt class="col-sm-4" style="font-weight:bold; color:#333;">
+            @Html.DisplayNameFor(model => model.DescriptionChambre)
+        </dt>
+        <dd class="col-sm-8" style="color:#555;">
+            @Html.DisplayFor(model => model.DescriptionChambre)
+        </dd>
+        <dt class="col-sm-4" style="font-weight:bold; color:#333;">
+            @Html.DisplayNameFor(model => model.StatutChambre)
+        </dt>
+        <dd class="col-sm-8" style="color:#555;">
+            @Html.DisplayFor(model => model.StatutChambre)
+        </dd>
+        <dt class="col-sm-4" style="font-weight:bold; color:#333;">
+            @Html.DisplayNameFor(model => model.TarifParNuit)
+        </dt>
+        <dd class="col-sm-8" style="color:#555;">
+            @Html.DisplayFor(model => model.TarifParNuit)
+        </dd>
+        <dt class="col-sm-4" style="font-weight:bold; color:#333;">
+            @Html.DisplayNameFor(model => model.TypeChambre)
+        </dt>
+        <dd class="col-sm-8" style="color:#555;">
+            @Html.DisplayFor(model => model.TypeChambre)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" style="text-align:center;">
+        <input type="hidden" asp-for="ChambreId" />
+        <input type="submit" value="Supprimer" class="btn" style="background-color:@dangerColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+        <a asp-action="Index" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; margin-left:10px; text-decoration:none; border-radius:5px;">Retour à la Liste</a>
+    </form>
+</div>

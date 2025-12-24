@@ -1,0 +1,81 @@
+﻿@model gestionhotel.Models.Reservation
+
+@{
+    ViewData["Title"] = "Modifier une Réservation";
+    var headerColor = "#4A57C6"; // Theme header color
+    var saveButtonColor = "#007bff"; // Save button color
+    var neutralButtonColor = "#6c757d"; // Neutral button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Modifier une Réservation</h1>
+
+<div style="margin: 30px auto; max-width: 700px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="text-align:center; margin-bottom:20px; color:@headerColor;">Détails de la Réservation</h3>
+    <hr />
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ReservationId" />
+
+        <div class="form-group">
+            <label asp-for="ChambreId" class="control-label fw-bold"></label>
+            <select asp-for="ChambreId" class="form-control" asp-items="ViewBag.ChambreId"></select>
+            <span asp-validation-for="ChambreId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SalleId" class="control-label fw-bold"></label>
+            <select asp-for="SalleId" class="form-control" asp-items="ViewBag.SalleId"></select>
+            <span asp-validation-for="SalleId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ServiceId" class="control-label fw-bold"></label>
+            <input asp-for="ServiceId" class="form-control" />
+            <span asp-validation-for="ServiceId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateDebut" class="control-label fw-bold"></label>
+            <input asp-for="DateDebut" class="form-control" />
+            <span asp-validation-for="DateDebut" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateFin" class="control-label fw-bold"></label>
+            <input asp-for="DateFin" class="form-control" />
+            <span asp-validation-for="DateFin" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateReservation" class="control-label fw-bold"></label>
+            <input asp-for="DateReservation" class="form-control" />
+            <span asp-validation-for="DateReservation" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="StatutReservation" class="control-label fw-bold"></label>
+            <input asp-for="StatutReservation" class="form-control" />
+            <span asp-validation-for="StatutReservation" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="TypeReservation" class="control-label fw-bold"></label>
+            <input asp-for="TypeReservation" class="form-control" />
+            <span asp-validation-for="TypeReservation" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" style="text-align:center; margin-top:20px;">
+            <input type="submit" value="Enregistrer" class="btn" style="background-color:@saveButtonColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+        </div>
+    </form>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a asp-action="Index" class="btn btn-secondary" style="background-color:@neutralButtonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Retour à la Liste</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

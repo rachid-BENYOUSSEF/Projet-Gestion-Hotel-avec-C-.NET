@@ -1,0 +1,52 @@
+﻿@model IEnumerable<gestionhotel.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Index";
+    var headerColor = "#4A57C6"; // Couleur pour les en-têtes
+    var buttonColor = "#7854B0"; // Couleur des boutons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Liste des Réservations</h1>
+
+<p>
+    <a asp-action="Create" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Ajouter une Nouvelle Réservation</a>
+</p>
+<table class="table table-bordered table-striped" style="width:100%; border-collapse:collapse; text-align:center;">
+    <thead style="background-color:@headerColor; color:white;">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.ServiceId)</th>
+            <th>@Html.DisplayNameFor(model => model.DateDebut)</th>
+            <th>@Html.DisplayNameFor(model => model.DateFin)</th>
+            <th>@Html.DisplayNameFor(model => model.DateReservation)</th>
+            <th>@Html.DisplayNameFor(model => model.StatutReservation)</th>
+            <th>@Html.DisplayNameFor(model => model.TypeReservation)</th>
+            <th>@Html.DisplayNameFor(model => model.Chambre)</th>
+            <th>@Html.DisplayNameFor(model => model.Salle)</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ServiceId)</td>
+                <td>@Html.DisplayFor(modelItem => item.DateDebut)</td>
+                <td>@Html.DisplayFor(modelItem => item.DateFin)</td>
+                <td>@Html.DisplayFor(modelItem => item.DateReservation)</td>
+                <td>@Html.DisplayFor(modelItem => item.StatutReservation)</td>
+                <td>@Html.DisplayFor(modelItem => item.TypeReservation)</td>
+                <td>@Html.DisplayFor(modelItem => item.Chambre.ChambreId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Salle.SalleId)</td>
+                <td>
+                    <img src="~/images/hotel_default.jpg" alt="Image d'hôtel" style="width:100px; height:auto; border-radius:5px;" />
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ReservationId" class="btn btn-primary" style="margin-right:5px;">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.ReservationId" class="btn btn-info" style="margin-right:5px;">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.ReservationId" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

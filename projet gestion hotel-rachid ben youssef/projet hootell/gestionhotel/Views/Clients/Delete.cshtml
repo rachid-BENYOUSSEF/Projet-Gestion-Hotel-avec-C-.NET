@@ -1,0 +1,74 @@
+﻿@model gestionhotel.Models.Client
+
+@{
+    ViewData["Title"] = "Supprimer un Client";
+    var headerColor = "#4A57C6"; // Theme header color
+    var dangerButtonColor = "#dc3545"; // Danger button color
+    var neutralButtonColor = "#6c757d"; // Neutral button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Supprimer un Client</h1>
+
+<div style="margin: 30px auto; max-width: 700px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color:#333; text-align:center;">Êtes-vous sûr de vouloir supprimer ce client ?</h3>
+    <hr />
+    <div>
+        <h4 style="color:@headerColor; margin-bottom:20px;">Détails du Client</h4>
+        <dl class="row">
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Adresse)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Adresse)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Historique)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Historique)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Nom)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Nom)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.NumeroTelephone)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.NumeroTelephone)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Preference)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Preference)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Prenom)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Prenom)
+            </dd>
+            <dt class="col-sm-3 font-weight-bold text-primary">
+                @Html.DisplayNameFor(model => model.Fidelite)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Fidelite.FideliteId)
+            </dd>
+        </dl>
+    </div>
+
+    <form asp-action="Delete" style="text-align:center; margin-top:20px;">
+        <input type="hidden" asp-for="ClientId" />
+        <input type="submit" value="Supprimer" class="btn" style="background-color:@dangerButtonColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+        <a asp-action="Index" class="btn" style="background-color:@neutralButtonColor; color:white; padding:10px 20px; margin-left:10px; text-decoration:none; border-radius:5px;">Retour à la Liste</a>
+    </form>
+</div>

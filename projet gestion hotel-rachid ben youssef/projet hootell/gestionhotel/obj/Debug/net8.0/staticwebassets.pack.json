@@ -1,0 +1,325 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\gestionhotel.bundle.scp.css",
+      "PackagePath": "staticwebassets\\gestionhotel.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\hotel1.jpeg",
+      "PackagePath": "staticwebassets\\images\\hotel1.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\hotel2.jpeg",
+      "PackagePath": "staticwebassets\\images\\hotel2.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\hotel3.jpeg",
+      "PackagePath": "staticwebassets\\images\\hotel3.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\hotellogo.png",
+      "PackagePath": "staticwebassets\\images\\hotellogo.png"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\room1.jpg",
+      "PackagePath": "staticwebassets\\images\\room1.jpg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\room2.jpg",
+      "PackagePath": "staticwebassets\\images\\room2.jpg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\room3.jpg",
+      "PackagePath": "staticwebassets\\images\\room3.jpg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\room4.jpg",
+      "PackagePath": "staticwebassets\\images\\room4.jpg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\salle1.jpeg",
+      "PackagePath": "staticwebassets\\images\\salle1.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\salle2.jpeg",
+      "PackagePath": "staticwebassets\\images\\salle2.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\salle3.jpeg",
+      "PackagePath": "staticwebassets\\images\\salle3.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\salle4.jpeg",
+      "PackagePath": "staticwebassets\\images\\salle4.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\service1.jpeg",
+      "PackagePath": "staticwebassets\\images\\service1.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\service2.jpeg",
+      "PackagePath": "staticwebassets\\images\\service2.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\images\\service3.jpeg",
+      "PackagePath": "staticwebassets\\images\\service3.jpeg"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\mine\\cours\\4eme\\S1\\.NET\\projet\\projet3.0\\gestionhotel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.gestionhotel.props",
+      "PackagePath": "build\\gestionhotel.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.gestionhotel.props",
+      "PackagePath": "buildMultiTargeting\\gestionhotel.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.gestionhotel.props",
+      "PackagePath": "buildTransitive\\gestionhotel.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.gestionhotel.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

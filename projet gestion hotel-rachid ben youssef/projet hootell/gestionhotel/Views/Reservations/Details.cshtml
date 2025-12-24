@@ -1,0 +1,77 @@
+﻿@model gestionhotel.Models.Reservation
+
+@{
+    ViewData["Title"] = "Détails de la Réservation";
+    var headerColor = "#4A57C6"; // Theme header color
+    var neutralButtonColor = "#6c757d"; // Neutral button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Détails de la Réservation</h1>
+
+<div style="margin: 30px auto; max-width: 800px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4 style="text-align:center; margin-bottom:20px; color:@headerColor;">Informations sur la Réservation</h4>
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.ServiceId)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.ServiceId)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.DateDebut)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.DateDebut)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.DateFin)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.DateFin)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.DateReservation)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.DateReservation)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.StatutReservation)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.StatutReservation)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.TypeReservation)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.TypeReservation)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.Chambre)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Chambre.ChambreId)
+        </dd>
+
+        <dt class="col-sm-4 fw-bold">
+            @Html.DisplayNameFor(model => model.Salle)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Salle.SalleId)
+        </dd>
+    </dl>
+</div>
+
+<div style="text-align:center; margin-top:20px;">
+    <a asp-action="Edit" asp-route-id="@Model?.ReservationId" class="btn btn-primary" style="padding:10px 20px; border-radius:5px; text-decoration:none;">Modifier</a> |
+    <a asp-action="Index" class="btn btn-secondary" style="padding:10px 20px; border-radius:5px; text-decoration:none; background-color:@neutralButtonColor;">Retour à la Liste</a>
+</div>

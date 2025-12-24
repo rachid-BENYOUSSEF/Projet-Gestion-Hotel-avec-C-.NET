@@ -1,0 +1,47 @@
+﻿@model gestionhotel.Models.Chambre
+
+@{
+    ViewData["Title"] = "Modifier une Chambre";
+    var headerColor = "#4A57C6"; // Header color
+    var buttonColor = "#7854B0"; // Button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Modifier une Chambre</h1>
+
+<div style="margin: 30px auto; max-width: 600px; padding: 20px; background-color:#f9f9f9; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4 style="color:@headerColor; text-align:center;">Informations sur la Chambre</h4>
+    <hr />
+    <form asp-action="Edit" style="margin-top:20px;">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ChambreId" />
+        <div class="form-group">
+            <label asp-for="Capacite" class="control-label" style="font-weight:bold; color:#333;"></label>
+            <input asp-for="Capacite" class="form-control" style="border: 1px solid #ccc; border-radius:5px;" />
+            <span asp-validation-for="Capacite" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DescriptionChambre" class="control-label" style="font-weight:bold; color:#333;"></label>
+            <input asp-for="DescriptionChambre" class="form-control" style="border: 1px solid #ccc; border-radius:5px;" />
+            <span asp-validation-for="DescriptionChambre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="StatutChambre" class="control-label" style="font-weight:bold; color:#333;"></label>
+            <input asp-for="StatutChambre" class="form-control" style="border: 1px solid #ccc; border-radius:5px;" />
+            <span asp-validation-for="StatutChambre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TarifParNuit" class="control-label" style="font-weight:bold; color:#333;"></label>
+            <input asp-for="TarifParNuit" class="form-control" style="border: 1px solid #ccc; border-radius:5px;" />
+            <span asp-validation-for="TarifParNuit" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TypeChambre" class="control-label" style="font-weight:bold; color:#333;"></label>
+            <input asp-for="TypeChambre" class="form-control" style="border: 1px solid #ccc; border-radius:5px;" />
+            <span asp-validation-for="TypeChambre" class="text-danger"></span>
+        </div>
+        <div class="form-group" style="text-align:center; margin-top:20px;">
+            <input type="submit" value="Enregistrer" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; border:none; border-radius:5px;" />
+            <a asp-action="Index" class="btn" style="background-color:#ccc; color:black; padding:10px 20px; margin-left:10px; text-decoration:none; border-radius:5px;">Retour à la Liste</a>
+        </div>
+    </form>
+</div>

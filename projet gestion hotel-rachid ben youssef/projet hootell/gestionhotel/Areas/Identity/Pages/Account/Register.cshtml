@@ -1,0 +1,44 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    var headerColor = "#4A57C6"; // Header color
+    var buttonColor = "#7854B0"; // Button color
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">@ViewData["Title"]</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" style="padding:20px; border:1px solid #ddd; border-radius:10px; background-color:#f9f9f9;">
+            <h2 style="color:@headerColor; text-align:center;">Create a new account</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Input.Email">Email</label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Password">Password</label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="btn" style="background-color:@buttonColor; color:white; width:100%; padding:10px 0; border-radius:5px;">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <div style="display:flex; justify-content:center; align-items:center; height:100%; text-align:center;">
+            <img src="~/images/hotellogo.png" alt="Welcome to Our Hotel" style="max-width:100%; height:auto; border-radius:15px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);" />
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

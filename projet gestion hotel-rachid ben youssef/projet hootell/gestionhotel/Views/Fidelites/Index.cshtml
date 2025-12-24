@@ -1,0 +1,38 @@
+﻿@model IEnumerable<gestionhotel.Models.Fidelite>
+
+@{
+    ViewData["Title"] = "Index";
+    var headerColor = "#4A57C6"; // Couleur pour les en-têtes
+    var buttonColor = "#7854B0"; // Couleur des boutons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Liste des Programmes de Fidélité</h1>
+
+<p>
+    <a asp-action="Create" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Ajouter un Nouveau Programme</a>
+</p>
+<table class="table table-bordered table-striped" style="width:100%; border-collapse:collapse; text-align:center;">
+    <thead style="background-color:@headerColor; color:white;">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.NiveauFidelite)</th>
+            <th>@Html.DisplayNameFor(model => model.OffreFidelite)</th>
+            <th>@Html.DisplayNameFor(model => model.PointsFidelite)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NiveauFidelite)</td>
+                <td>@Html.DisplayFor(modelItem => item.OffreFidelite)</td>
+                <td>@Html.DisplayFor(modelItem => item.PointsFidelite)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FideliteId" class="btn btn-primary" style="margin-right:5px;">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.FideliteId" class="btn btn-info" style="margin-right:5px;">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.FideliteId" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

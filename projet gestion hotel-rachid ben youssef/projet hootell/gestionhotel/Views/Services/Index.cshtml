@@ -1,0 +1,40 @@
+﻿@model IEnumerable<gestionhotel.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+    var headerColor = "#4A57C6"; // Couleur pour les en-têtes
+    var buttonColor = "#7854B0"; // Couleur des boutons
+}
+
+<h1 style="color:@headerColor; text-align:center; margin-bottom:20px;">Liste des Services</h1>
+
+<p>
+    <a asp-action="Create" class="btn" style="background-color:@buttonColor; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">Ajouter un Nouveau Service</a>
+</p>
+<table class="table table-bordered table-striped" style="width:100%; border-collapse:collapse; text-align:center;">
+    <thead style="background-color:@headerColor; color:white;">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.DescriptionService)</th>
+            <th>@Html.DisplayNameFor(model => model.NomService)</th>
+            <th>@Html.DisplayNameFor(model => model.StatutService)</th>
+            <th>@Html.DisplayNameFor(model => model.Reservation)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.DescriptionService)</td>
+                <td>@Html.DisplayFor(modelItem => item.NomService)</td>
+                <td>@Html.DisplayFor(modelItem => item.StatutService)</td>
+                <td>@Html.DisplayFor(modelItem => item.Reservation.ReservationId)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ServiceId" class="btn btn-primary" style="margin-right:5px;">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.ServiceId" class="btn btn-info" style="margin-right:5px;">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.ServiceId" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
